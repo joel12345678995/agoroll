@@ -1,7 +1,7 @@
 'use client';
 
-import  MarketingNav  from '@/components/MarketingNav';
-import MarketingFooter from '@/components/MarketingFooter';
+import { MarketingNav } from '@/components/MarketingNav';
+import { MarketingFooter } from '@/components/MarketingFooter';
 
 export default function TermsPage() {
   return (
@@ -11,7 +11,7 @@ export default function TermsPage() {
         <section className="bg-gradient-to-b from-primary-navy to-secondary-navy text-white py-16">
           <div className="container mx-auto px-4 text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">
-              Terms of <span className="text-accent-blue">Service</span>
+              Terms of <span className="text-[#FFD700]">Service</span>
             </h1>
             <p className="text-xl text-white/80 max-w-2xl mx-auto">
               Terms and conditions for using agoroll
@@ -57,7 +57,7 @@ export default function TermsPage() {
                 <h2 className="text-2xl font-bold text-primary-navy mb-4">4. Data Privacy</h2>
                 <p className="text-text-secondary">
                   We are committed to protecting your privacy. Our data practices are detailed in our 
-                  <a href="/privacy" className="text-accent-blue hover:underline ml-1">Privacy Policy</a>.
+                  <a href="/privacy" className="text-[#FFD700] hover:underline ml-1">Privacy Policy</a>.
                 </p>
               </div>
 
