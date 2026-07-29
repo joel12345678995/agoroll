@@ -1,7 +1,7 @@
 'use client';
 
-import  MarketingNav  from '@/components/MarketingNav';
-import MarketingFooter from '@/components/MarketingFooter';
+import { MarketingNav } from '@/components/MarketingNav';
+import  MarketingFooter  from '@/components/MarketingFooter';
 
 export default function PrivacyPage() {
   return (
@@ -11,7 +11,7 @@ export default function PrivacyPage() {
         <section className="bg-gradient-to-b from-primary-navy to-secondary-navy text-white py-16">
           <div className="container mx-auto px-4 text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">
-              Privacy <span className="text-accent-blue">Policy</span>
+              Privacy <span className="text-[#FFD700]">Policy</span>
             </h1>
             <p className="text-xl text-white/80 max-w-2xl mx-auto">
               How we protect and handle your data

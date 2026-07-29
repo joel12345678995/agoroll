@@ -1,8 +1,8 @@
 'use client';
 
 import { useState } from 'react';
-import MarketingNav from '@/components/MarketingNav';
-import MarketingFooter  from '@/components/MarketingFooter';
+import { MarketingNav } from '@/components/MarketingNav';
+import  MarketingFooter  from '@/components/MarketingFooter';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
@@ -30,7 +30,7 @@ export default function ContactPage() {
         <section className="bg-gradient-to-b from-primary-navy to-secondary-navy text-white py-16">
           <div className="container mx-auto px-4 text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">
-              Contact <span className="text-accent-blue">Us</span>
+              Contact <span className="text-[#FFD700]">Us</span>
             </h1>
             <p className="text-xl text-white/80 max-w-2xl mx-auto">
               Have questions? We'd love to hear from you.
@@ -44,8 +44,8 @@ export default function ContactPage() {
               <div className="lg:col-span-1 space-y-4">
                 <Card>
                   <CardContent className="p-6 flex items-start gap-4">
-                    <div className="w-10 h-10 bg-accent-blue/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                      <Mail className="h-5 w-5 text-accent-blue" />
+                    <div className="w-10 h-10 bg-[#FFD700]/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <Mail className="h-5 w-5 text-[#FFD700]" />
                     </div>
                     <div>
                       <p className="font-medium text-primary-navy">Email</p>
@@ -55,19 +55,19 @@ export default function ContactPage() {
                 </Card>
                 <Card>
                   <CardContent className="p-6 flex items-start gap-4">
-                    <div className="w-10 h-10 bg-accent-blue/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                      <Phone className="h-5 w-5 text-accent-blue" />
+                    <div className="w-10 h-10 bg-[#FFD700]/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <Phone className="h-5 w-5 text-[#FFD700]" />
                     </div>
                     <div>
                       <p className="font-medium text-primary-navy">Phone</p>
-                      <p className="text-sm text-text-secondary">+256 757136062</p>
+                      <p className="text-sm text-text-secondary">+256 700 000 000</p>
                     </div>
                   </CardContent>
                 </Card>
                 <Card>
                   <CardContent className="p-6 flex items-start gap-4">
-                    <div className="w-10 h-10 bg-accent-blue/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                      <MapPin className="h-5 w-5 text-accent-blue" />
+                    <div className="w-10 h-10 bg-[#FFD700]/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <MapPin className="h-5 w-5 text-[#FFD700]" />
                     </div>
                     <div>
                       <p className="font-medium text-primary-navy">Location</p>
@@ -112,7 +112,7 @@ export default function ContactPage() {
                       </div>
                       <Button 
                         type="submit" 
-                        className="bg-accent-blue hover:bg-accent-blue/90 text-white"
+                        className="bg-[#FFD700] hover:bg-[#FFD700]/90 text-primary-navy font-bold"
                         disabled={isSubmitting}
                       >
                         <Send className="h-4 w-4 mr-2" />
