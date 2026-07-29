@@ -15,7 +15,7 @@ import {
   Users as UsersIcon,
   TrendingUp
 } from 'lucide-react';
-import { MarketingNav } from '@/components/MarketingNav';
+import  MarketingNav  from '@/components/MarketingNav';
 import MarketingFooter from '@/components/MarketingFooter';  // ✅ FIXED
 import  PricingSection  from '@/components/PricingSection';  // ✅ FIXED
 

@@ -1,6 +1,6 @@
 'use client';
 
-import { MarketingNav } from '@/components/MarketingNav';
+import MarketingNav  from '@/components/MarketingNav';
 import  MarketingFooter  from '@/components/MarketingFooter';
 
 export default function PrivacyPage() {

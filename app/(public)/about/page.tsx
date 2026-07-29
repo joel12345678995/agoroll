@@ -1,6 +1,6 @@
 'use client';
 
-import { MarketingNav } from '@/components/MarketingNav';
+import MarketingNav from '@/components/MarketingNav';
 import MarketingFooter  from '@/components/MarketingFooter';
 import { Button } from '@/components/ui/button';
 import { Users, Target, Heart, Award } from 'lucide-react';

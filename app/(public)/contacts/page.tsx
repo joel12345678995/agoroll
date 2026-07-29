@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { MarketingNav } from '@/components/MarketingNav';
+import MarketingNav  from '@/components/MarketingNav';
 import  MarketingFooter  from '@/components/MarketingFooter';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';

@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Check, X } from "lucide-react";
-import { MarketingNav } from "@/components/MarketingNav";  // FIXED: Named import
+import  MarketingNav  from "@/components/MarketingNav";  // FIXED: Named import
 import MarketingFooter  from "@/components/MarketingFooter";  // FIXED: Named import
 import  PricingSection  from "@/components/PricingSection";  // FIXED: Named import
 import { Button } from "@/components/ui/button";

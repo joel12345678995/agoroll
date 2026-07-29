@@ -10,7 +10,7 @@ import {
   Calendar,
 } from "lucide-react";
 import { Card } from "@/components/ui/card";
-import { MarketingNav } from "@/components/MarketingNav";  // Named import - CORRECT
+import MarketingNav  from "@/components/MarketingNav";  // Named import - CORRECT
 import  MarketingFooter from "@/components/MarketingFooter";  // Named import - CORRECT
 
 const featureGroups = [
