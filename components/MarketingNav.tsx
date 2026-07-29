@@ -1,79 +1,95 @@
-"use client";
+'use client';
 
-import { useState } from "react";
-import Link from "next/link";
-import { Menu, X } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { useState } from 'react';
+import Link from 'next/link';
+import { Menu, X } from 'lucide-react';
+import { Button } from './ui/button';
+import { cn } from '@/lib/utils';
 
-const links = [
-  { label: "Features", href: "/features" },
-  { label: "Pricing", href: "/pricing" },
-];
-
-export default function MarketingNav() {
-  const [open, setOpen] = useState(false);
+export function MarketingNav() {
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-border bg-white/90 backdrop-blur">
-      <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 md:px-8">
-        <Link href="/" className="text-2xl font-black tracking-tight text-primary-navy">
-          agoroll
-        </Link>
+    <nav className="fixed top-0 w-full z-50 bg-white border-b border-border">
+      <div className="container mx-auto px-4">
+        <div className="flex h-16 items-center justify-between">
+          <Link href="/" className="text-2xl font-black text-primary-navy">
+            agoroll<span className="text-[#FFD700]">.</span>
+          </Link>
 
-        <nav className="hidden items-center gap-8 md:flex">
-          {links.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              className="text-sm font-medium text-text-secondary hover:text-text-primary"
-            >
-              {link.label}
+          <div className="hidden md:flex items-center gap-8">
+            <Link href="/features" className="text-sm font-medium text-text-secondary hover:text-primary-navy transition-colors">
+              Features
             </Link>
-          ))}
-        </nav>
-
-        <div className="hidden items-center gap-3 md:flex">
-          <Link href="/login">
-            <Button variant="ghost">Log in</Button>
-          </Link>
-          <Link href="/login">
-            <Button>Start Free Trial</Button>
-          </Link>
-        </div>
-
-        <button
-          className="p-2 text-text-primary md:hidden"
-          onClick={() => setOpen(!open)}
-          aria-label="Toggle menu"
-        >
-          {open ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-        </button>
-      </div>
-
-      {open && (
-        <div className="border-t border-border bg-white px-4 py-4 md:hidden">
-          <nav className="flex flex-col gap-4">
-            {links.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className="text-sm font-medium text-text-secondary"
-                onClick={() => setOpen(false)}
-              >
-                {link.label}
-              </Link>
-            ))}
-            <Link href="/login" onClick={() => setOpen(false)}>
-              <Button variant="outline" className="w-full">
-                Log in
+            <Link href="/pricing" className="text-sm font-medium text-text-secondary hover:text-primary-navy transition-colors">
+              Pricing
+            </Link>
+            <Link href="/resources" className="text-sm font-medium text-text-secondary hover:text-primary-navy transition-colors">
+              Resources
+            </Link>
+            <Link href="/login">
+              <Button variant="ghost" className="text-sm font-medium text-text-secondary hover:text-primary-navy">
+                Sign In
               </Button>
             </Link>
-            <Link href="/login" onClick={() => setOpen(false)}>
-              <Button className="w-full">Start Free Trial</Button>
+            <Link href="/login">
+              <Button className="bg-[#FFD700] hover:bg-[#FFD700]/90 text-primary-navy font-bold text-sm px-6 h-10 rounded-lg shadow-sm hover:shadow transition-all">
+                Get Started
+              </Button>
             </Link>
-          </nav>
+          </div>
+
+          <Button
+            variant="ghost"
+            size="icon"
+            className="md:hidden"
+            onClick={() => setIsOpen(!isOpen)}
+          >
+            {isOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+          </Button>
         </div>
-      )}
-    </header>
+
+        <div
+          className={cn(
+            'md:hidden overflow-hidden transition-all duration-300',
+            isOpen ? 'max-h-96 py-4' : 'max-h-0'
+          )}
+        >
+          <div className="flex flex-col space-y-4">
+            <Link
+              href="/features"
+              className="text-text-secondary hover:text-primary-navy transition-colors"
+              onClick={() => setIsOpen(false)}
+            >
+              Features
+            </Link>
+            <Link
+              href="/pricing"
+              className="text-text-secondary hover:text-primary-navy transition-colors"
+              onClick={() => setIsOpen(false)}
+            >
+              Pricing
+            </Link>
+            <Link
+              href="/resources"
+              className="text-text-secondary hover:text-primary-navy transition-colors"
+              onClick={() => setIsOpen(false)}
+            >
+              Resources
+            </Link>
+            <Link href="/login" onClick={() => setIsOpen(false)}>
+              <Button variant="ghost" className="w-full text-text-secondary hover:text-primary-navy">
+                Sign In
+              </Button>
+            </Link>
+            <Link href="/login" onClick={() => setIsOpen(false)}>
+              <Button className="w-full bg-[#FFD700] hover:bg-[#FFD700]/90 text-primary-navy font-bold">
+                Get Started
+              </Button>
+            </Link>
+          </div>
+        </div>
+      </div>
+    </nav>
   );
 }

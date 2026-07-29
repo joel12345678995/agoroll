@@ -10,8 +10,8 @@ import {
   Calendar,
 } from "lucide-react";
 import { Card } from "@/components/ui/card";
-import MarketingNav from "@/components/MarketingNav";
-import MarketingFooter from "@/components/MarketingFooter";
+import { MarketingNav } from "@/components/MarketingNav";  // Named import - CORRECT
+import  MarketingFooter from "@/components/MarketingFooter";  // Named import - CORRECT
 
 const featureGroups = [
   {
@@ -90,7 +90,7 @@ export default function FeaturesPage() {
     <div className="flex min-h-screen flex-col bg-white">
       <MarketingNav />
 
-      <section className="bg-surface-light py-20">
+      <section className="bg-surface py-20">
         <div className="mx-auto max-w-3xl px-4 text-center md:px-8">
           <h1 className="text-4xl font-black tracking-tight text-text-primary md:text-5xl">
             Built for how Rotary clubs actually run
@@ -110,8 +110,8 @@ export default function FeaturesPage() {
               <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
                 {group.items.map((feature) => (
                   <Card key={feature.title} className="p-6">
-                    <div className="flex h-11 w-11 items-center justify-center rounded-lg bg-accent-blue/10">
-                      <feature.icon className="h-5 w-5 text-accent-blue" />
+                    <div className="flex h-11 w-11 items-center justify-center rounded-lg bg-[#FFD700]/10">
+                      <feature.icon className="h-5 w-5 text-[#FFD700]" />
                     </div>
                     <h3 className="mt-4 text-base font-bold text-text-primary">
                       {feature.title}

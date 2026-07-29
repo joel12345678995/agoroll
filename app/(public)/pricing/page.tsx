@@ -1,8 +1,8 @@
 import Link from "next/link";
 import { Check, X } from "lucide-react";
-import MarketingNav from "@/components/MarketingNav";
-import MarketingFooter from "@/components/MarketingFooter";
-import PricingSection from "@/components/PricingSection";
+import { MarketingNav } from "@/components/MarketingNav";  // FIXED: Named import
+import MarketingFooter  from "@/components/MarketingFooter";  // FIXED: Named import
+import  PricingSection  from "@/components/PricingSection";  // FIXED: Named import
 import { Button } from "@/components/ui/button";
 
 const comparisonRows: { label: string; starter: boolean | string; pro: boolean | string; enterprise: boolean | string }[] = [
@@ -36,10 +36,10 @@ export default function PricingPage() {
     <div className="flex min-h-screen flex-col bg-white">
       <MarketingNav />
 
-      <section className="bg-surface-light py-20">
+      <section className="bg-surface py-20">
         <div className="mx-auto max-w-3xl px-4 text-center md:px-8">
           <h1 className="text-4xl font-black tracking-tight text-text-primary md:text-5xl">
-            Simple, transparent pricing
+            Simple, transparent <span className="text-[#FFD700]">pricing</span>
           </h1>
           <p className="mt-5 text-lg text-text-secondary">
             Start free. Upgrade as your club grows. No hidden fees, cancel anytime.
@@ -51,25 +51,25 @@ export default function PricingPage() {
         <PricingSection />
       </section>
 
-      <section className="border-t border-border bg-surface-light py-20">
+      <section className="border-t border-border bg-surface py-20">
         <div className="mx-auto max-w-5xl px-4 md:px-8">
           <h2 className="text-center text-2xl font-bold text-text-primary md:text-3xl">
             Compare plans in detail
           </h2>
 
-          <div className="mt-10 overflow-x-auto rounded-lg border border-border bg-white">
+          <div className="mt-10 overflow-x-auto rounded-lg border border-border bg-white shadow-sm">
             <table className="w-full min-w-[640px] text-left text-sm">
-              <thead className="border-b border-border">
+              <thead className="border-b border-border bg-surface">
                 <tr>
                   <th className="px-5 py-4 font-semibold text-text-secondary">Feature</th>
                   <th className="px-5 py-4 text-center font-semibold text-text-primary">Starter</th>
-                  <th className="px-5 py-4 text-center font-semibold text-accent-blue">Pro</th>
+                  <th className="px-5 py-4 text-center font-semibold text-[#FFD700]">Pro</th>
                   <th className="px-5 py-4 text-center font-semibold text-text-primary">Enterprise</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-border">
                 {comparisonRows.map((row) => (
-                  <tr key={row.label}>
+                  <tr key={row.label} className="hover:bg-surface/50 transition-colors">
                     <td className="px-5 py-4 font-medium text-text-primary">{row.label}</td>
                     <td className="px-5 py-4 text-center"><Cell value={row.starter} /></td>
                     <td className="px-5 py-4 text-center"><Cell value={row.pro} /></td>
@@ -89,8 +89,8 @@ export default function PricingPage() {
         <p className="mt-4 text-text-secondary">
           Talk to our team about your club's size and needs.
         </p>
-        <Link href="/login">
-          <Button size="lg" className="mt-8">
+        <Link href="/contact">
+          <Button size="lg" className="mt-8 bg-[#FFD700] hover:bg-[#FFD700]/90 text-primary-navy font-bold">
             Book a Demo
           </Button>
         </Link>
