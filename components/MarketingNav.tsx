@@ -6,7 +6,7 @@ import { Menu, X } from 'lucide-react';
 import { Button } from './ui/button';
 import { cn } from '@/lib/utils';
 
-export function MarketingNav() {
+export default function MarketingNav() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -18,20 +18,36 @@ export function MarketingNav() {
           </Link>
 
           <div className="hidden md:flex items-center gap-8">
-            <Link href="/features" className="text-sm font-medium text-text-secondary hover:text-primary-navy transition-colors">
+            <Link
+              href="/features"
+              className="text-sm font-medium text-text-secondary hover:text-primary-navy transition-colors"
+            >
               Features
             </Link>
-            <Link href="/pricing" className="text-sm font-medium text-text-secondary hover:text-primary-navy transition-colors">
+
+            <Link
+              href="/pricing"
+              className="text-sm font-medium text-text-secondary hover:text-primary-navy transition-colors"
+            >
               Pricing
             </Link>
-            <Link href="/resources" className="text-sm font-medium text-text-secondary hover:text-primary-navy transition-colors">
+
+            <Link
+              href="/resources"
+              className="text-sm font-medium text-text-secondary hover:text-primary-navy transition-colors"
+            >
               Resources
             </Link>
+
             <Link href="/login">
-              <Button variant="ghost" className="text-sm font-medium text-text-secondary hover:text-primary-navy">
+              <Button
+                variant="ghost"
+                className="text-sm font-medium text-text-secondary hover:text-primary-navy"
+              >
                 Sign In
               </Button>
             </Link>
+
             <Link href="/login">
               <Button className="bg-[#FFD700] hover:bg-[#FFD700]/90 text-primary-navy font-bold text-sm px-6 h-10 rounded-lg shadow-sm hover:shadow transition-all">
                 Get Started
@@ -45,7 +61,11 @@ export function MarketingNav() {
             className="md:hidden"
             onClick={() => setIsOpen(!isOpen)}
           >
-            {isOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+            {isOpen ? (
+              <X className="h-5 w-5" />
+            ) : (
+              <Menu className="h-5 w-5" />
+            )}
           </Button>
         </div>
 
@@ -63,6 +83,7 @@ export function MarketingNav() {
             >
               Features
             </Link>
+
             <Link
               href="/pricing"
               className="text-text-secondary hover:text-primary-navy transition-colors"
@@ -70,6 +91,7 @@ export function MarketingNav() {
             >
               Pricing
             </Link>
+
             <Link
               href="/resources"
               className="text-text-secondary hover:text-primary-navy transition-colors"
@@ -77,11 +99,16 @@ export function MarketingNav() {
             >
               Resources
             </Link>
+
             <Link href="/login" onClick={() => setIsOpen(false)}>
-              <Button variant="ghost" className="w-full text-text-secondary hover:text-primary-navy">
+              <Button
+                variant="ghost"
+                className="w-full text-text-secondary hover:text-primary-navy"
+              >
                 Sign In
               </Button>
             </Link>
+
             <Link href="/login" onClick={() => setIsOpen(false)}>
               <Button className="w-full bg-[#FFD700] hover:bg-[#FFD700]/90 text-primary-navy font-bold">
                 Get Started
