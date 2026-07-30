@@ -73,7 +73,7 @@ export default function Home() {
                   <span className="text-xs font-bold text-[#35374E] uppercase tracking-wider">agoroll</span>
                 </div>
 
-                {/* Main Heading - Gold text #35374E */}
+                {/* Main Heading - Gold #35374E */}
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-black text-[#0C284E] leading-[1.1] mb-4">
                   Simplify. Manage. Track.
                   <br />
@@ -85,7 +85,7 @@ export default function Home() {
                   Plan better events, increase member engagement, and grow your donations with Agoroll's intuitive dashboard.
                 </p>
 
-                {/* Buttons */}
+                {/* Buttons - Gold #35374E */}
                 <div className="flex flex-wrap items-center gap-4 mb-6">
                   <Link href="/contact">
                     <Button size="lg" className="bg-[#35374E] hover:bg-[#35374E]/90 text-white font-bold px-8 h-12 rounded-lg shadow-lg hover:shadow-xl transition-all">
