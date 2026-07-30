@@ -15,9 +15,9 @@ import {
   Users as UsersIcon,
   TrendingUp
 } from 'lucide-react';
-import  MarketingNav  from '@/components/MarketingNav';
-import MarketingFooter from '@/components/MarketingFooter';  // ✅ FIXED
-import  PricingSection  from '@/components/PricingSection';  // ✅ FIXED
+import MarketingNav from '@/components/MarketingNav';
+import MarketingFooter from '@/components/MarketingFooter';
+import PricingSection from '@/components/PricingSection';
 
 const features = [
   {
@@ -57,27 +57,27 @@ export default function Home() {
     <>
       <MarketingNav />
       <main>
-        {/* HERO SECTION - EXACT MATCH */}
+        {/* HERO SECTION */}
         <section className="relative overflow-hidden bg-white pt-24 pb-16 md:pt-32 md:pb-24">
-          {/* Yellow Background Gradients */}
-          <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-[#35374E]/15 to-transparent pointer-events-none" />
-          <div className="absolute top-1/3 right-0 w-96 h-96 bg-[#35374E]/5 rounded-full blur-3xl pointer-events-none" />
-          <div className="absolute bottom-0 right-1/4 w-64 h-64 bg-[#35374E]/5 rounded-full blur-3xl pointer-events-none" />
+          {/* Gold Background Gradients */}
+          <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-[#990F02]/15 to-transparent pointer-events-none" />
+          <div className="absolute top-1/3 right-0 w-96 h-96 bg-[#990F02]/5 rounded-full blur-3xl pointer-events-none" />
+          <div className="absolute bottom-0 right-1/4 w-64 h-64 bg-[#990F02]/5 rounded-full blur-3xl pointer-events-none" />
           
           <div className="container mx-auto px-4 relative">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
               {/* Left Column - Content */}
               <div>
-                {/* Badge */}
-                <div className="inline-flex items-center gap-2 bg-[#35374E]/10 border border-[#35374E]/20 rounded-full px-4 py-1.5 mb-4">
-                  <span className="text-xs font-bold text-[#35374E] uppercase tracking-wider">agoroll</span>
+                {/* Badge - Gold */}
+                <div className="inline-flex items-center gap-2 bg-[#990F02]/10 border border-[#990F02]/20 rounded-full px-4 py-1.5 mb-4">
+                  <span className="text-xs font-bold text-[#990F02] uppercase tracking-wider">agoroll</span>
                 </div>
 
-                {/* Main Heading */}
-                <h1 className="text-4xl md:text-5xl lg:text-6xl font-black text-#0C284E leading-[1.1] mb-4">
+                {/* Main Heading - Gold text */}
+                <h1 className="text-4xl md:text-5xl lg:text-6xl font-black text-[#450920] leading-[1.1] mb-4">
                   Simplify. Manage. Track.
                   <br />
-                  <span className="text-[#35374E]">Your Rotary Club's Success.</span>
+                  <span className="text-[#990F02]">Your Rotary Club's Success.</span>
                 </h1>
 
                 {/* Description */}
@@ -88,20 +88,20 @@ export default function Home() {
                 {/* Buttons */}
                 <div className="flex flex-wrap items-center gap-4 mb-6">
                   <Link href="/contact">
-                    <Button size="lg" className="bg-[#35374E] hover:bg-[#35374E]/90 text-#0C284E font-bold px-8 h-12 rounded-lg shadow-lg hover:shadow-xl transition-all">
+                    <Button size="lg" className="bg-[#990F02] hover:bg-[#990F02]/90 text-white font-bold px-8 h-12 rounded-lg shadow-lg hover:shadow-xl transition-all">
                       Request a Demo
                       <ArrowRight className="ml-2 h-5 w-5" />
                     </Button>
                   </Link>
                   <Link href="/features">
-                    <Button size="lg" variant="outline" className="border-2 border-#0C284E text-#0C284E hover:bg-#0C284E hover:text-white px-8 h-12 rounded-lg font-medium transition-all">
+                    <Button size="lg" variant="outline" className="border-2 border-[#450920] text-[#450920] hover:bg-[#450920] hover:text-white px-8 h-12 rounded-lg font-medium transition-all">
                       Explore Features
                     </Button>
                   </Link>
                 </div>
 
                 {/* How it Works Link */}
-                <Link href="#how-it-works" className="inline-flex items-center gap-2 text-#0C284E hover:text-[#35374E] transition-colors font-medium group">
+                <Link href="#how-it-works" className="inline-flex items-center gap-2 text-[#450920] hover:text-[#990F02] transition-colors font-medium group">
                   How it Works
                   <Play className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
                 </Link>
@@ -110,9 +110,9 @@ export default function Home() {
                 <div className="mt-8 pt-6 border-t border-border">
                   <div className="flex flex-wrap items-center gap-4">
                     <div className="flex items-center gap-3">
-                      {/* Rotary Logo - Yellow Circle */}
-                      <div className="w-12 h-12 rounded-full bg-[#35374E] flex items-center justify-center flex-shrink-0 shadow-md">
-                        <svg viewBox="0 0 24 24" fill="none" className="w-7 h-7 text-#0C284E">
+                      {/* Rotary Logo - Gold */}
+                      <div className="w-12 h-12 rounded-full bg-[#990F02] flex items-center justify-center flex-shrink-0 shadow-md">
+                        <svg viewBox="0 0 24 24" fill="none" className="w-7 h-7 text-white">
                           <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="2"/>
                           <path d="M12 2 L12 22 M2 12 L22 12" stroke="currentColor" strokeWidth="1.5"/>
                           <circle cx="12" cy="12" r="4" fill="currentColor"/>
@@ -120,7 +120,7 @@ export default function Home() {
                       </div>
                       <div>
                         <p className="text-xs text-text-secondary">Used by over</p>
-                        <p className="text-sm font-semibold text-#0C284E">[50+] Rotary clubs across [3] districts</p>
+                        <p className="text-sm font-semibold text-[#450920]">[50+] Rotary clubs across [3] districts</p>
                       </div>
                     </div>
                   </div>
@@ -132,8 +132,8 @@ export default function Home() {
                 <div className="relative w-full max-w-2xl">
                   {/* Laptop Screen */}
                   <div className="relative">
-                    {/* Screen Frame */}
-                    <div className="bg-gradient-to-b from-[#0C284E] to-[#35374E] rounded-t-2xl p-3 shadow-2xl border border-white/10">
+                    {/* Screen Frame - Updated colors */}
+                    <div className="bg-gradient-to-b from-[#450920] to-[#990F02] rounded-t-2xl p-3 shadow-2xl border border-white/10">
                       {/* Screen Content */}
                       <div className="bg-white rounded-lg overflow-hidden">
                         {/* Dashboard Preview */}
@@ -141,13 +141,13 @@ export default function Home() {
                           {/* Dashboard Header */}
                           <div className="flex items-center justify-between mb-4">
                             <div className="flex items-center gap-2">
-                              <div className="w-3 h-3 rounded-full bg-[#35374E]" />
-                              <div className="w-3 h-3 rounded-full bg-#0C284E" />
+                              <div className="w-3 h-3 rounded-full bg-[#990F02]" />
+                              <div className="w-3 h-3 rounded-full bg-[#450920]" />
                               <div className="w-3 h-3 rounded-full bg-success" />
                             </div>
                             <div className="text-xs font-bold text-text-secondary">Dashboard</div>
-                            <div className="w-16 h-6 bg-[#35374E]/10 rounded-md flex items-center justify-center">
-                              <span className="text-[10px] text-[#35374E] font-bold">LIVE</span>
+                            <div className="w-16 h-6 bg-[#990F02]/10 rounded-md flex items-center justify-center">
+                              <span className="text-[10px] text-[#990F02] font-bold">LIVE</span>
                             </div>
                           </div>
 
@@ -157,24 +157,24 @@ export default function Home() {
                             <div className="grid grid-cols-3 gap-3">
                               <div className="bg-surface rounded-lg p-3 border border-border">
                                 <div className="flex items-center gap-2 mb-1">
-                                  <Calendar className="w-3 h-3 text-[#35374E]" />
+                                  <Calendar className="w-3 h-3 text-[#990F02]" />
                                   <p className="text-[10px] text-text-secondary font-medium">Events</p>
                                 </div>
-                                <p className="text-xl font-bold text-#0C284E">12</p>
+                                <p className="text-xl font-bold text-[#450920]">12</p>
                               </div>
                               <div className="bg-surface rounded-lg p-3 border border-border">
                                 <div className="flex items-center gap-2 mb-1">
-                                  <UsersIcon className="w-3 h-3 text-#0C284E" />
+                                  <UsersIcon className="w-3 h-3 text-[#450920]" />
                                   <p className="text-[10px] text-text-secondary font-medium">Members</p>
                                 </div>
-                                <p className="text-xl font-bold text-#0C284E">48</p>
+                                <p className="text-xl font-bold text-[#450920]">48</p>
                               </div>
                               <div className="bg-surface rounded-lg p-3 border border-border">
                                 <div className="flex items-center gap-2 mb-1">
                                   <TrendingUp className="w-3 h-3 text-success" />
                                   <p className="text-[10px] text-text-secondary font-medium">Donations</p>
                                 </div>
-                                <p className="text-xl font-bold text-#0C284E">0</p>
+                                <p className="text-xl font-bold text-[#450920]">0</p>
                               </div>
                             </div>
 
@@ -183,25 +183,25 @@ export default function Home() {
                               <div>
                                 <div className="flex justify-between text-xs">
                                   <span className="text-text-secondary">Attendance</span>
-                                  <span className="text-#0C284E font-semibold">75%</span>
+                                  <span className="text-[#450920] font-semibold">75%</span>
                                 </div>
                                 <div className="w-full h-1.5 bg-surface rounded-full mt-1 overflow-hidden">
-                                  <div className="w-3/4 h-full bg-[#35374E] rounded-full" />
+                                  <div className="w-3/4 h-full bg-[#990F02] rounded-full" />
                                 </div>
                               </div>
                               <div>
                                 <div className="flex justify-between text-xs">
                                   <span className="text-text-secondary">Dues Collection</span>
-                                  <span className="text-#0C284E font-semibold">60%</span>
+                                  <span className="text-[#450920] font-semibold">60%</span>
                                 </div>
                                 <div className="w-full h-1.5 bg-surface rounded-full mt-1 overflow-hidden">
-                                  <div className="w-3/5 h-full bg-#0C284E rounded-full" />
+                                  <div className="w-3/5 h-full bg-[#450920] rounded-full" />
                                 </div>
                               </div>
                               <div>
                                 <div className="flex justify-between text-xs">
                                   <span className="text-text-secondary">Member Engagement</span>
-                                  <span className="text-#0C284E font-semibold">45%</span>
+                                  <span className="text-[#450920] font-semibold">45%</span>
                                 </div>
                                 <div className="w-full h-1.5 bg-surface rounded-full mt-1 overflow-hidden">
                                   <div className="w-2/5 h-full bg-success rounded-full" />
@@ -212,11 +212,11 @@ export default function Home() {
                             {/* Bottom Row */}
                             <div className="flex items-center justify-between pt-3 border-t border-border">
                               <div className="flex -space-x-2">
-                                <div className="w-7 h-7 rounded-full bg-[#35374E]/30 border-2 border-white flex items-center justify-center text-[10px] font-bold text-#0C284E">JD</div>
-                                <div className="w-7 h-7 rounded-full bg-#0C284E/30 border-2 border-white flex items-center justify-center text-[10px] font-bold text-white">JS</div>
+                                <div className="w-7 h-7 rounded-full bg-[#990F02]/30 border-2 border-white flex items-center justify-center text-[10px] font-bold text-[#450920]">JD</div>
+                                <div className="w-7 h-7 rounded-full bg-[#450920]/30 border-2 border-white flex items-center justify-center text-[10px] font-bold text-white">JS</div>
                                 <div className="w-7 h-7 rounded-full bg-success/30 border-2 border-white flex items-center justify-center text-[10px] font-bold text-white">RW</div>
                                 <div className="w-7 h-7 rounded-full bg-warning/30 border-2 border-white flex items-center justify-center text-[10px] font-bold text-white">MK</div>
-                                <div className="w-7 h-7 rounded-full bg-[#35374E]/30 border-2 border-white flex items-center justify-center text-[10px] font-bold text-#0C284E">+8</div>
+                                <div className="w-7 h-7 rounded-full bg-[#990F02]/30 border-2 border-white flex items-center justify-center text-[10px] font-bold text-[#450920]">+8</div>
                               </div>
                               <div className="text-xs text-text-secondary font-medium">+12 this month</div>
                             </div>
@@ -227,8 +227,8 @@ export default function Home() {
 
                     {/* Laptop Base */}
                     <div className="w-[95%] mx-auto">
-                      <div className="h-2 bg-gradient-to-b from-[#0C284E]/90 to-[#35374E]/60 rounded-b-lg" />
-                      <div className="h-1 w-1/4 mx-auto bg-[#35374E]/30 rounded-full mt-1" />
+                      <div className="h-2 bg-gradient-to-b from-[#450920]/90 to-[#990F02]/60 rounded-b-lg" />
+                      <div className="h-1 w-1/4 mx-auto bg-[#990F02]/30 rounded-full mt-1" />
                     </div>
 
                     {/* Laptop Shadow */}
@@ -236,32 +236,32 @@ export default function Home() {
                   </div>
 
                   {/* Floating Decorations */}
-                  <div className="absolute -top-6 -right-6 w-20 h-20 bg-[#35374E]/15 rounded-full blur-2xl" />
-                  <div className="absolute -bottom-6 -left-6 w-20 h-20 bg-#0C284E/10 rounded-full blur-2xl" />
-                  <div className="absolute top-1/2 -right-8 w-12 h-12 bg-[#35374E]/10 rounded-full blur-xl" />
+                  <div className="absolute -top-6 -right-6 w-20 h-20 bg-[#990F02]/15 rounded-full blur-2xl" />
+                  <div className="absolute -bottom-6 -left-6 w-20 h-20 bg-[#450920]/10 rounded-full blur-2xl" />
+                  <div className="absolute top-1/2 -right-8 w-12 h-12 bg-[#990F02]/10 rounded-full blur-xl" />
                 </div>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Trust Bar */}
+        {/* Trust Bar - Gold */}
         <section className="bg-surface py-5 border-y border-border">
           <div className="container mx-auto px-4">
             <div className="flex flex-wrap items-center justify-center gap-6 md:gap-10">
               <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-full bg-[#35374E] flex items-center justify-center flex-shrink-0 shadow-sm">
-                  <svg viewBox="0 0 24 24" fill="none" className="w-6 h-6 text-#0C284E">
+                <div className="w-10 h-10 rounded-full bg-[#990F02] flex items-center justify-center flex-shrink-0 shadow-sm">
+                  <svg viewBox="0 0 24 24" fill="none" className="w-6 h-6 text-white">
                     <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="2"/>
                     <path d="M12 2 L12 22 M2 12 L22 12" stroke="currentColor" strokeWidth="1.5"/>
                     <circle cx="12" cy="12" r="4" fill="currentColor"/>
                   </svg>
                 </div>
                 <span className="text-sm text-text-secondary">
-                  Used by over <strong className="text-#0C284E">[50+]</strong> Rotary clubs across <strong className="text-#0C284E">[3]</strong> districts
+                  Used by over <strong className="text-[#450920]">[50+]</strong> Rotary clubs across <strong className="text-[#450920]">[3]</strong> districts
                 </span>
-                <div className="w-10 h-10 rounded-full bg-[#35374E] flex items-center justify-center flex-shrink-0 shadow-sm">
-                  <svg viewBox="0 0 24 24" fill="none" className="w-6 h-6 text-#0C284E">
+                <div className="w-10 h-10 rounded-full bg-[#990F02] flex items-center justify-center flex-shrink-0 shadow-sm">
+                  <svg viewBox="0 0 24 24" fill="none" className="w-6 h-6 text-white">
                     <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="2"/>
                     <path d="M12 2 L12 22 M2 12 L22 12" stroke="currentColor" strokeWidth="1.5"/>
                     <circle cx="12" cy="12" r="4" fill="currentColor"/>
@@ -276,7 +276,7 @@ export default function Home() {
         <section className="py-20 bg-white" id="how-it-works">
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-#0C284E mb-4">
+              <h2 className="text-3xl md:text-4xl font-bold text-[#450920] mb-4">
                 Everything You Need to Run Your Club
               </h2>
               <p className="text-text-secondary text-lg max-w-2xl mx-auto">
@@ -286,10 +286,10 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {features.map((feature, index) => (
                 <div key={index} className="p-6 bg-surface rounded-xl border border-border hover:shadow-lg transition-all hover:-translate-y-1 duration-300">
-                  <div className="w-12 h-12 bg-[#35374E]/10 rounded-lg flex items-center justify-center mb-4">
-                    <feature.icon className="h-6 w-6 text-[#35374E]" />
+                  <div className="w-12 h-12 bg-[#990F02]/10 rounded-lg flex items-center justify-center mb-4">
+                    <feature.icon className="h-6 w-6 text-[#990F02]" />
                   </div>
-                  <h3 className="text-lg font-bold text-#0C284E mb-2">{feature.title}</h3>
+                  <h3 className="text-lg font-bold text-[#450920] mb-2">{feature.title}</h3>
                   <p className="text-text-secondary text-sm leading-relaxed">{feature.description}</p>
                 </div>
               ))}
@@ -300,8 +300,8 @@ export default function Home() {
         {/* Pricing Section */}
         <PricingSection />
 
-        {/* CTA Section */}
-        <section className="bg-#0C284E text-white py-20">
+        {/* CTA Section - Blue */}
+        <section className="bg-[#450920] text-white py-20">
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
               Ready to Transform Your Club?
@@ -310,7 +310,7 @@ export default function Home() {
               Join thousands of clubs using agoroll to manage members, dues, and attendance.
             </p>
             <Link href="/contact">
-              <Button size="lg" className="bg-[#35374E] hover:bg-[#35374E]/90 text-#0C284E font-bold px-8 h-12 rounded-lg shadow-lg hover:shadow-xl transition-all">
+              <Button size="lg" className="bg-[#990F02] hover:bg-[#990F02]/90 text-white font-bold px-8 h-12 rounded-lg shadow-lg hover:shadow-xl transition-all">
                 Request a Demo
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
