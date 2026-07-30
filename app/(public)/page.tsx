@@ -300,7 +300,7 @@ export default function Home() {
         {/* Pricing Section */}
         <PricingSection />
 
-        {/* CTA Section - Blue background #0C284E, Gold button #35374E */}
+        {/* CTA Section */}
         <section className="bg-[#0C284E] text-white py-20">
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
