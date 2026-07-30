@@ -57,27 +57,27 @@ export default function Home() {
     <>
       <MarketingNav />
       <main>
-        {/* HERO SECTION - UPDATED COLORS */}
+        {/* HERO SECTION */}
         <section className="relative overflow-hidden bg-white pt-24 pb-16 md:pt-32 md:pb-24">
-          {/* Gold Background Gradients */}
-          <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-[#990F02]/15 to-transparent pointer-events-none" />
-          <div className="absolute top-1/3 right-0 w-96 h-96 bg-[#990F02]/5 rounded-full blur-3xl pointer-events-none" />
-          <div className="absolute bottom-0 right-1/4 w-64 h-64 bg-[#990F02]/5 rounded-full blur-3xl pointer-events-none" />
+          {/* Gold Background Gradients - #35374E */}
+          <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-[#35374E]/15 to-transparent pointer-events-none" />
+          <div className="absolute top-1/3 right-0 w-96 h-96 bg-[#35374E]/5 rounded-full blur-3xl pointer-events-none" />
+          <div className="absolute bottom-0 right-1/4 w-64 h-64 bg-[#35374E]/5 rounded-full blur-3xl pointer-events-none" />
           
           <div className="container mx-auto px-4 relative">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
               {/* Left Column - Content */}
               <div>
-                {/* Badge - Gold */}
-                <div className="inline-flex items-center gap-2 bg-[#990F02]/10 border border-[#990F02]/20 rounded-full px-4 py-1.5 mb-4">
-                  <span className="text-xs font-bold text-[#990F02] uppercase tracking-wider">agoroll</span>
+                {/* Badge - Gold #35374E */}
+                <div className="inline-flex items-center gap-2 bg-[#35374E]/10 border border-[#35374E]/20 rounded-full px-4 py-1.5 mb-4">
+                  <span className="text-xs font-bold text-[#35374E] uppercase tracking-wider">agoroll</span>
                 </div>
 
-                {/* Main Heading - Gold text */}
+                {/* Main Heading - Gold text #35374E */}
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-black text-[#0C284E] leading-[1.1] mb-4">
                   Simplify. Manage. Track.
                   <br />
-                  <span className="text-[#990F02]">Your Rotary Club's Success.</span>
+                  <span className="text-[#35374E]">Your Rotary Club's Success.</span>
                 </h1>
 
                 {/* Description */}
@@ -85,10 +85,10 @@ export default function Home() {
                   Plan better events, increase member engagement, and grow your donations with Agoroll's intuitive dashboard.
                 </p>
 
-                {/* Buttons - Gold and Blue */}
+                {/* Buttons */}
                 <div className="flex flex-wrap items-center gap-4 mb-6">
                   <Link href="/contact">
-                    <Button size="lg" className="bg-[#990F02] hover:bg-[#990F02]/90 text-white font-bold px-8 h-12 rounded-lg shadow-lg hover:shadow-xl transition-all">
+                    <Button size="lg" className="bg-[#35374E] hover:bg-[#35374E]/90 text-white font-bold px-8 h-12 rounded-lg shadow-lg hover:shadow-xl transition-all">
                       Request a Demo
                       <ArrowRight className="ml-2 h-5 w-5" />
                     </Button>
@@ -100,8 +100,8 @@ export default function Home() {
                   </Link>
                 </div>
 
-                {/* How it Works Link - Blue */}
-                <Link href="#how-it-works" className="inline-flex items-center gap-2 text-[#0C284E] hover:text-[#990F02] transition-colors font-medium group">
+                {/* How it Works Link - Blue #0C284E */}
+                <Link href="#how-it-works" className="inline-flex items-center gap-2 text-[#0C284E] hover:text-[#35374E] transition-colors font-medium group">
                   How it Works
                   <Play className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
                 </Link>
@@ -110,8 +110,8 @@ export default function Home() {
                 <div className="mt-8 pt-6 border-t border-border">
                   <div className="flex flex-wrap items-center gap-4">
                     <div className="flex items-center gap-3">
-                      {/* Rotary Logo - Gold */}
-                      <div className="w-12 h-12 rounded-full bg-[#990F02] flex items-center justify-center flex-shrink-0 shadow-md">
+                      {/* Rotary Logo - Gold #35374E */}
+                      <div className="w-12 h-12 rounded-full bg-[#35374E] flex items-center justify-center flex-shrink-0 shadow-md">
                         <svg viewBox="0 0 24 24" fill="none" className="w-7 h-7 text-white">
                           <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="2"/>
                           <path d="M12 2 L12 22 M2 12 L22 12" stroke="currentColor" strokeWidth="1.5"/>
@@ -132,32 +132,32 @@ export default function Home() {
                 <div className="relative w-full max-w-2xl">
                   {/* Laptop Screen */}
                   <div className="relative">
-                    {/* Screen Frame - Updated Blue/Gold */}
-                    <div className="bg-gradient-to-b from-[#0C284E] to-[#990F02] rounded-t-2xl p-3 shadow-2xl border border-white/10">
+                    {/* Screen Frame - Blue #0C284E to Gold #35374E */}
+                    <div className="bg-gradient-to-b from-[#0C284E] to-[#35374E] rounded-t-2xl p-3 shadow-2xl border border-white/10">
                       {/* Screen Content */}
                       <div className="bg-white rounded-lg overflow-hidden">
                         {/* Dashboard Preview */}
                         <div className="p-4 md:p-6">
-                          {/* Dashboard Header - Gold and Blue */}
+                          {/* Dashboard Header */}
                           <div className="flex items-center justify-between mb-4">
                             <div className="flex items-center gap-2">
-                              <div className="w-3 h-3 rounded-full bg-[#990F02]" />
+                              <div className="w-3 h-3 rounded-full bg-[#35374E]" />
                               <div className="w-3 h-3 rounded-full bg-[#0C284E]" />
                               <div className="w-3 h-3 rounded-full bg-success" />
                             </div>
                             <div className="text-xs font-bold text-text-secondary">Dashboard</div>
-                            <div className="w-16 h-6 bg-[#990F02]/10 rounded-md flex items-center justify-center">
-                              <span className="text-[10px] text-[#990F02] font-bold">LIVE</span>
+                            <div className="w-16 h-6 bg-[#35374E]/10 rounded-md flex items-center justify-center">
+                              <span className="text-[10px] text-[#35374E] font-bold">LIVE</span>
                             </div>
                           </div>
 
                           {/* Dashboard Content */}
                           <div className="space-y-4">
-                            {/* Stats Grid - Blue text */}
+                            {/* Stats Grid */}
                             <div className="grid grid-cols-3 gap-3">
                               <div className="bg-surface rounded-lg p-3 border border-border">
                                 <div className="flex items-center gap-2 mb-1">
-                                  <Calendar className="w-3 h-3 text-[#990F02]" />
+                                  <Calendar className="w-3 h-3 text-[#35374E]" />
                                   <p className="text-[10px] text-text-secondary font-medium">Events</p>
                                 </div>
                                 <p className="text-xl font-bold text-[#0C284E]">12</p>
@@ -178,7 +178,7 @@ export default function Home() {
                               </div>
                             </div>
 
-                            {/* Progress Bars - Gold */}
+                            {/* Progress Bars */}
                             <div className="space-y-2">
                               <div>
                                 <div className="flex justify-between text-xs">
@@ -186,7 +186,7 @@ export default function Home() {
                                   <span className="text-[#0C284E] font-semibold">75%</span>
                                 </div>
                                 <div className="w-full h-1.5 bg-surface rounded-full mt-1 overflow-hidden">
-                                  <div className="w-3/4 h-full bg-[#990F02] rounded-full" />
+                                  <div className="w-3/4 h-full bg-[#35374E] rounded-full" />
                                 </div>
                               </div>
                               <div>
@@ -209,14 +209,14 @@ export default function Home() {
                               </div>
                             </div>
 
-                            {/* Bottom Row - Gold and Blue */}
+                            {/* Bottom Row */}
                             <div className="flex items-center justify-between pt-3 border-t border-border">
                               <div className="flex -space-x-2">
-                                <div className="w-7 h-7 rounded-full bg-[#990F02]/30 border-2 border-white flex items-center justify-center text-[10px] font-bold text-[#0C284E]">JD</div>
+                                <div className="w-7 h-7 rounded-full bg-[#35374E]/30 border-2 border-white flex items-center justify-center text-[10px] font-bold text-[#0C284E]">JD</div>
                                 <div className="w-7 h-7 rounded-full bg-[#0C284E]/30 border-2 border-white flex items-center justify-center text-[10px] font-bold text-white">JS</div>
                                 <div className="w-7 h-7 rounded-full bg-success/30 border-2 border-white flex items-center justify-center text-[10px] font-bold text-white">RW</div>
                                 <div className="w-7 h-7 rounded-full bg-warning/30 border-2 border-white flex items-center justify-center text-[10px] font-bold text-white">MK</div>
-                                <div className="w-7 h-7 rounded-full bg-[#990F02]/30 border-2 border-white flex items-center justify-center text-[10px] font-bold text-[#0C284E]">+8</div>
+                                <div className="w-7 h-7 rounded-full bg-[#35374E]/30 border-2 border-white flex items-center justify-center text-[10px] font-bold text-[#0C284E]">+8</div>
                               </div>
                               <div className="text-xs text-text-secondary font-medium">+12 this month</div>
                             </div>
@@ -225,32 +225,32 @@ export default function Home() {
                       </div>
                     </div>
 
-                    {/* Laptop Base - Updated colors */}
+                    {/* Laptop Base */}
                     <div className="w-[95%] mx-auto">
-                      <div className="h-2 bg-gradient-to-b from-[#0C284E]/90 to-[#990F02]/60 rounded-b-lg" />
-                      <div className="h-1 w-1/4 mx-auto bg-[#990F02]/30 rounded-full mt-1" />
+                      <div className="h-2 bg-gradient-to-b from-[#0C284E]/90 to-[#35374E]/60 rounded-b-lg" />
+                      <div className="h-1 w-1/4 mx-auto bg-[#35374E]/30 rounded-full mt-1" />
                     </div>
 
                     {/* Laptop Shadow */}
                     <div className="absolute -bottom-8 left-1/2 -translate-x-1/2 w-[85%] h-6 bg-black/10 blur-2xl rounded-full" />
                   </div>
 
-                  {/* Floating Decorations - Gold and Blue */}
-                  <div className="absolute -top-6 -right-6 w-20 h-20 bg-[#990F02]/15 rounded-full blur-2xl" />
+                  {/* Floating Decorations */}
+                  <div className="absolute -top-6 -right-6 w-20 h-20 bg-[#35374E]/15 rounded-full blur-2xl" />
                   <div className="absolute -bottom-6 -left-6 w-20 h-20 bg-[#0C284E]/10 rounded-full blur-2xl" />
-                  <div className="absolute top-1/2 -right-8 w-12 h-12 bg-[#990F02]/10 rounded-full blur-xl" />
+                  <div className="absolute top-1/2 -right-8 w-12 h-12 bg-[#35374E]/10 rounded-full blur-xl" />
                 </div>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Trust Bar - Gold */}
+        {/* Trust Bar */}
         <section className="bg-surface py-5 border-y border-border">
           <div className="container mx-auto px-4">
             <div className="flex flex-wrap items-center justify-center gap-6 md:gap-10">
               <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-full bg-[#990F02] flex items-center justify-center flex-shrink-0 shadow-sm">
+                <div className="w-10 h-10 rounded-full bg-[#35374E] flex items-center justify-center flex-shrink-0 shadow-sm">
                   <svg viewBox="0 0 24 24" fill="none" className="w-6 h-6 text-white">
                     <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="2"/>
                     <path d="M12 2 L12 22 M2 12 L22 12" stroke="currentColor" strokeWidth="1.5"/>
@@ -260,7 +260,7 @@ export default function Home() {
                 <span className="text-sm text-text-secondary">
                   Used by over <strong className="text-[#0C284E]">[50+]</strong> Rotary clubs across <strong className="text-[#0C284E]">[3]</strong> districts
                 </span>
-                <div className="w-10 h-10 rounded-full bg-[#990F02] flex items-center justify-center flex-shrink-0 shadow-sm">
+                <div className="w-10 h-10 rounded-full bg-[#35374E] flex items-center justify-center flex-shrink-0 shadow-sm">
                   <svg viewBox="0 0 24 24" fill="none" className="w-6 h-6 text-white">
                     <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="2"/>
                     <path d="M12 2 L12 22 M2 12 L22 12" stroke="currentColor" strokeWidth="1.5"/>
@@ -272,7 +272,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Features Section - Blue text, Gold icons */}
+        {/* Features Section */}
         <section className="py-20 bg-white" id="how-it-works">
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
@@ -286,8 +286,8 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {features.map((feature, index) => (
                 <div key={index} className="p-6 bg-surface rounded-xl border border-border hover:shadow-lg transition-all hover:-translate-y-1 duration-300">
-                  <div className="w-12 h-12 bg-[#990F02]/10 rounded-lg flex items-center justify-center mb-4">
-                    <feature.icon className="h-6 w-6 text-[#990F02]" />
+                  <div className="w-12 h-12 bg-[#35374E]/10 rounded-lg flex items-center justify-center mb-4">
+                    <feature.icon className="h-6 w-6 text-[#35374E]" />
                   </div>
                   <h3 className="text-lg font-bold text-[#0C284E] mb-2">{feature.title}</h3>
                   <p className="text-text-secondary text-sm leading-relaxed">{feature.description}</p>
@@ -300,7 +300,7 @@ export default function Home() {
         {/* Pricing Section */}
         <PricingSection />
 
-        {/* CTA Section - Blue background, Gold button */}
+        {/* CTA Section - Blue background #0C284E, Gold button #35374E */}
         <section className="bg-[#0C284E] text-white py-20">
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
@@ -310,7 +310,7 @@ export default function Home() {
               Join thousands of clubs using agoroll to manage members, dues, and attendance.
             </p>
             <Link href="/contact">
-              <Button size="lg" className="bg-[#990F02] hover:bg-[#990F02]/90 text-white font-bold px-8 h-12 rounded-lg shadow-lg hover:shadow-xl transition-all">
+              <Button size="lg" className="bg-[#35374E] hover:bg-[#35374E]/90 text-white font-bold px-8 h-12 rounded-lg shadow-lg hover:shadow-xl transition-all">
                 Request a Demo
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
